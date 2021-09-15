@@ -19,9 +19,16 @@ class RepoObject:
         self.language = language
 
     def __str__(self):
-        return f"""- **[{self.repo_name}]({self.repo_url})** by [{self.author_name}]({self.author_url})
+        if self.author_url:
+            return f"""- **[{self.repo_name}]({self.repo_url})** by [{self.author_name}]({self.author_url})
+
     {self.description}
-        """
+            """
+        else:
+            return f"""- **[{self.repo_name}]({self.repo_url})** by *{self.author_name}*
+
+    {self.description}
+            """
 
     def __lt__(self, other):
         return self.stargazers < other.stargazers
@@ -62,17 +69,20 @@ def get_repo(repo_path, author):
     repo = get_repo_info(repo_path)
     if not repo:
         return
-    user_name = author or repo_path.split("/")[0]
-    user = get_user_info(user_name)
-    if not user:
-        return
     repo_name = repo.get('name')
     repo_url = repo.get('html_url')
     description = repo.get("description")
     stargazers = repo.get("stargazers_count")
     language = repo.get("language")
-    author_name = user.get("name") or user.get('login')
-    author_url = user.get("html_url")
+
+    user_name = author or repo_path.split("/")[0]
+    user = get_user_info(user_name)
+    if not user:
+        author_name = user.get("name") or user.get('login')
+        author_url = user.get("html_url")
+    else:
+        author_name = user_name
+        author_url = None
     return RepoObject(author_name, author_url, repo_name, repo_url,
                      description, stargazers, language)
 

@@ -6,3 +6,4 @@ umijs/umi
 xuxueli/xxl-job
 neoclide/coc.nvim,chemzqm
 
+shadowsocks/shadowsocks,clowwindy
