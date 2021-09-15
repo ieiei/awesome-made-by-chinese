@@ -104,7 +104,6 @@ def main():
             repo_object = get_repo(repo_path, author)
         if isinstance(repo_object, RepoObject):
             repo_list.append(repo_object)
-        time.sleep(1)
     project_file.close()
 
     repo_list.sort(reverse=True)
