@@ -4,6 +4,12 @@
 - **[xgboost](https://github.com/dmlc/xgboost)** by [Tianqi Chen](https://github.com/tqchen)
     Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library,  for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Dask, Flink and DataFlow
         
+- **[xxl-job](https://github.com/xuxueli/xxl-job)** by [许雪里](https://github.com/xuxueli)
+    A distributed task scheduling framework.（分布式任务调度平台XXL-JOB）
+        
+- **[coc.nvim](https://github.com/neoclide/coc.nvim)** by [Qiming zhao](https://github.com/chemzqm)
+    Nodejs extension host for vim & neovim, load extensions like VSCode and host language servers.
+        
 - **[umi](https://github.com/umijs/umi)** by [UmiJS](https://github.com/umijs)
     🌋 Pluggable enterprise-level react application framework.
         
