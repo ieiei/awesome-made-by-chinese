@@ -7,3 +7,4 @@ xuxueli/xxl-job
 neoclide/coc.nvim,chemzqm
 
 shadowsocks/shadowsocks,clowwindy
+vuejs/vue,yyx990803

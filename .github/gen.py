@@ -71,13 +71,13 @@ def get_repo(repo_path, author):
         return
     repo_name = repo.get('name')
     repo_url = repo.get('html_url')
-    description = repo.get("description")
+    description = repo.get("description") or ""
     stargazers = repo.get("stargazers_count")
     language = repo.get("language")
 
     user_name = author or repo_path.split("/")[0]
     user = get_user_info(user_name)
-    if not user:
+    if user:
         author_name = user.get("name") or user.get('login')
         author_url = user.get("html_url")
     else:
