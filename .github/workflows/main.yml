@@ -22,7 +22,7 @@ jobs:
         python-version: 3.9
     - name: Gen README
       run: |
-        python gen.py
+        python .github/gen.py
     - name: Commit files
       run: |
         git config --local user.name  ${{ github.actor }}

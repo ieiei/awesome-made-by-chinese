@@ -3,3 +3,6 @@ sentsin/layui
 dmlc/xgboost, tqchen
 eleme/lancet
 umijs/umi
+xuxueli/xxl-job
+neoclide/coc.nvim,chemzqm
+
