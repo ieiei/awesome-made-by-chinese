@@ -1,40 +1,39 @@
-- **[vue](https://github.com/vuejs/vue)** by [Evan You](https://github.com/yyx990803)
 
-    🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
-            
-- **[shadowsocks](https://github.com/shadowsocks/shadowsocks)** by [clowwindy](https://github.com/clowwindy)
+# :china: Awesome Made by Chineses [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-    
-            
-- **[jieba](https://github.com/fxsjy/jieba)** by [Sun Junyi](https://github.com/fxsjy)
+> Curating the best projects that were made and mainly contributed by Chinese developers
 
-    结巴中文分词
-            
-- **[layui](https://github.com/sentsin/layui)** by [贤心](https://github.com/sentsin)
+## > 30k ★
 
-    采用自身模块规范编写的前端 UI 框架，遵循原生 HTML/CSS/JS 的书写形式，极低门槛，拿来即用。
-            
-- **[xgboost](https://github.com/dmlc/xgboost)** by [Tianqi Chen](https://github.com/tqchen)
+- **[caffe](https://github.com/BVLC/caffe)** by [Yangqing Jia](https://github.com/Yangqing)
 
-    Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library,  for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Dask, Flink and DataFlow
+    Caffe: a fast open framework for deep learning.
             
-- **[xxl-job](https://github.com/xuxueli/xxl-job)** by [许雪里](https://github.com/xuxueli)
+- **[kong](https://github.com/Kong/kong)** by [Kong](https://github.com/Kong)
 
-    A distributed task scheduling framework.（分布式任务调度平台XXL-JOB）
+    🦍 The Cloud-Native API Gateway 
             
-- **[coc.nvim](https://github.com/neoclide/coc.nvim)** by [Qiming zhao](https://github.com/chemzqm)
+## > 10k ★
 
-    Nodejs extension host for vim & neovim, load extensions like VSCode and host language servers.
-            
-- **[umi](https://github.com/umijs/umi)** by [UmiJS](https://github.com/umijs)
+- **[apollo](https://github.com/ApolloAuto/apollo)** by [Baidu](https://github.com/baidu)
 
-    🌋 Pluggable enterprise-level react application framework.
+    An open autonomous driving platform
             
-- **[jfinal](https://github.com/jfinal/jfinal)** by [James Zhan](https://github.com/jfinal)
 
-    JAVA WEB + ORM Framework
-            
-- **[lancet](https://github.com/eleme/lancet)** by [eleme](https://github.com/eleme)
+## Contributing
 
-    A lightweight and fast AOP framework for Android App and SDK developers
-            
+You can easy add project and pull request, just add project in file project.list and the actions will generate the README.
+The project format is repo[,author], if the author is not the repo owner. The repo is must in github, but the author need not.
+
+Please make sure that:
+- The project was created by the developer born in China or self-indicate themself as Chinese.
+- The project is widely used rathe than a experimental or sample project.
+- The project can not be a collections or a paper or blog.
+- The project has more that 1000 stars on Github, cause the actions will cut the project which under 1000 stars.
+
+
+## Thanks
+
+- [🇷🇺 awesome-made-by-russians](https://github.com/gaearon/awesome-made-by-russians)
+- [🇧🇷 awesome-made-by-brazilians](https://github.com/felipefialho/awesome-made-by-brazilians)
+
