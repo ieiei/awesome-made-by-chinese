@@ -9,7 +9,7 @@ REPO_API = "https://api.github.com/repos/"
 STAR_SPLIT = [1000, 3000, 10000, 30000]
 
 HEADER = """
-# :china: Awesome Made by Chineses [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# :cn: Awesome Made by Chineses [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > Curating the best projects that were made and mainly contributed by Chinese developers
 
@@ -19,6 +19,7 @@ CONTRIBUTE = """
 ## Contributing
 
 You can easy add project and pull request, just add project in file project.list and the actions will generate the README.
+
 The project format is repo[,author], if the author is not the repo owner. The repo is must in github, but the author need not.
 
 Please make sure that:
@@ -69,6 +70,9 @@ class RepoObject:
         self.description = description
         self.stargazers = stargazers
         self.language = language
+
+    def __repr__(self):
+        return self.repo_name
 
     def __str__(self):
         if self.author_url:
