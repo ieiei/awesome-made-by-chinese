@@ -5,20 +5,6 @@ name: Python application
 
 on:
   pull_request:
-    branch: [ main ]
-    
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Gen README
-      run: |
-        sort project.list -k2,2 | sort -u -o project.list
-
-on:
-  push:
     branches: [ main ]
 
 jobs:
@@ -32,6 +18,9 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
+    - name: sort uniq project.list
+      run: |
+        sort project.list -k2,2 | sort -u -o project.list
     - name: Gen README
       run: |
         python .github/gen.py
